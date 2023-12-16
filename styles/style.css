@@ -2,14 +2,22 @@
 /* Global Styles */
 
 body {
-	background: rgba(67,66,65,1.00);
-	margin-left: auto;
-	margin-right: auto;
-	width: 92%;
-	max-width: 960px;
-	padding-left: 2.275%;
-	padding-right: 2.275%;
+    background: rgba(67,66,65,1.00);
+    background-image: url("../img/bg.jpeg");
+    background-repeat: no-repeat;
+	background-clip: border-box;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
+    max-width: 960px;
+    padding-left: 2.275%;
+    padding-right: 2.275%;
+    border-radius: 10px;
+    background-blend-mode: overlay;
+	
 }
+
 /* Header */
 header {
 	text-align: center;
@@ -18,7 +26,10 @@ header {
 header .profileLogo .logoPlaceholder {
 	width: 187px;
 	text-align: center;
+		filter: none;
+
 }
+
 header .logoPlaceholder span {
 	width: 80px;
 	height: 22px;
@@ -28,8 +39,9 @@ header .logoPlaceholder span {
 	font-weight: 700;
 	line-height: 53px;
 }
+
 header .profilePhoto {
-	background-color: rgba(56,51,46,1.0);
+	background-color: rgba(56,51,46,0.70);
 	width: 259px;
 	border-radius: 20%;
 	height: 259px;
@@ -43,6 +55,18 @@ header .profileHeader h1 {
 	font-weight: 700;
 	line-height: 24px;
 }
+
+.blurbackg {
+	background: rgba(47,47,47,0.57);
+	border-radius: 13px;
+  	padding: 20px; 
+	clear: both;
+	
+	/* Add the blur effect */
+  	filter: blur(8px);
+  	-webkit-filter: blur(8px);
+}
+
 header .profileHeader h3 {
 	font-family: sans-serif;
 	font-weight: bold;
@@ -146,7 +170,8 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 	cursor: pointer;
 }
 .mainContent .externalResourcesNav .externalResources:hover {
-	background-color: rgba(31,31,28,1.00);
+    background-color: rgba(31,31,28,1.00);
+    color: #D89800;
 }
 /* Button text ? */
 .externalResourcesNav .externalResources a {
