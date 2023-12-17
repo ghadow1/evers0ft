@@ -2,16 +2,10 @@
 /* Global Styles */
 
 body {
-	border-radius: 16px;
-	box-shadow: 4 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(6px);
-	-webkit-backdrop-filter: blur(6px);
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	background: rgba(0,0,0,0.60);
-    background-image: url("../img/bg.jpeg");
+	background: rgba(27, 27, 27, 0.44);
+	background-image: url("../img/bg.jpeg");
     background-repeat: no-repeat;
 	background-clip: inherit;
-	/*background-clip: border-box;*/
     margin-left: auto;
     margin-right: auto;
     size: 100%;
@@ -21,14 +15,20 @@ body {
     padding-right: 2.275%;
     border-radius: 10px;
     background-blend-mode: overlay;
-	
 }
 
 /* Header */
 header {
 	text-align: center;
 	display: block;
+	background: rgba(25,20,17,0.59);
+	border-radius: 16px;
+	box-shadow: 0 6px 60px rgba(0, 0, 0, 70);
+	backdrop-filter: blur(8.8px);
+	-webkit-backdrop-filter: blur(8.8px);
+	border: 1px solid rgba(112,112,112,0.70);
 }
+
 header .profileLogo .logoPlaceholder {
 	width: 187px;
 	text-align: center;
@@ -48,6 +48,12 @@ header .logoPlaceholder span {
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 53px;
+}
+
+header .test33 {
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.65);
+	box-shadow: 4 4px 30px rgba(0, 0, 0, 0.65);
 }
 
 header .profilePhoto {
