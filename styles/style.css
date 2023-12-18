@@ -492,6 +492,7 @@ footer .footerNote {
 	font-weight: 400;
 	line-height: 1.8;
 	}
+
 footer2 {
 		grid-column-start: 1;
 		grid-column-end: 3;
@@ -511,7 +512,6 @@ footer2 {
 	header2 {
 		grid-column-start: 1;
 		grid-column-end: 3;
-		text-align: center;
 		display: block;
 		background: rgba(25,20,17,0.39);
 		box-shadow: 0 6px 60px rgba(0, 0, 0, 70);
@@ -522,7 +522,8 @@ footer2 {
 		grid-template-rows: 50px 200px 100px;
 		grid-gap: 1em;
 		width: 98.3%;
-		height: 28px;
+		height: 33px;
+		text-align: right;
 	}
 
 	.grid > * {
@@ -536,5 +537,49 @@ footer2 {
     	grid-gap: 10px;
    	 	grid-template-columns: [col1-start] 100px  [col2-start] 100px  [col3-start] 100px;
    	 	grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+	}
+
+
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+	}
+
+	li {
+  		float: left;
+		padding-right: 8px;
+
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 6px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.11);
+		padding-left: 5px;
+
+	}
+
+	li a {
+  		display: block;
+ 		color: white;
+		 float: left;
+
+  		text-align: center;
+ 		padding-left: 40px;
+		padding-right: 40px;
+  		text-decoration: none;
+		height: 28px;
+	}
+
+	/* Change the link color to #111 (black) on hover */
+	li a:hover {
+		background-repeat: no-repeat;
+		background: rgba(11, 11, 11, 0.128);
+		border-radius: 6px;
+		background-size: contain;
+		color: #D89800;
+		text-shadow: 0 0 0.22px #ffffff4f, 0 0 5px #494444, 0 0 6px #e68e0071, 0 0 7px #e6c7005e, 0 0 7px #e6860066, 0 0 6px #e651005d, 0 0 4px #e6ad0081;
 	}
 }
