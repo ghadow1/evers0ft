@@ -50,31 +50,20 @@
     <div class="grid">
       <header2>
         <ul>
-          <li><a href="#download">Play</a></li>
+          <li><a id="play_button" href="#download">Play</a></li>
           <li><a href="#git">Repository</a></li>
           <li><a href="#developersb">Development</a></li>
-          <li><a class="active" href="#about">Donate</a></li>
+          <li><a href="#about">Donate</a></li>
         </ul>
       </header2>
       <main>
-        <h3>Kotlin description<img src="img/welever.png" alt="Evergreen" width="220" align="center"><p>Update Post #0.8</p></h3>
-        <!----BLOG POST -->
-        <p>The combination of these two have shown outstanding performance, on my machine while also running the server
-          in standard fixed mode it runs about 11-12ms with resize mode running around 15-17ms but this can vary when
-          you continuously enlarge the game applet.</p>
-          <p>The combination of these two have shown outstanding performance, on my machine while also running the server
-          in standard fixed mode it runs about 11-12ms with resize mode running around 15-17ms but this can vary when
-          you continuously enlarge the game applet.</p>
+        <!------>
+      <p>Evergreen is aimed to be a lightweight and modern rendition of the 2005 gamepack, the game engine was built
+        using apollo which is a high-performance, modular RuneScape emulator with a collection of utilities for managing
+        data files and plugins.</p></p>
       </main>
       <main>
-        <br>
-        <div id="parent">
-          <div class="child"><a href="blog.html"> Blog Post Link</a></div>
-          <br>
-          <div class="child"><a href="#"> GitHub Link</a></div>
-          <br>
-          <div class="child"><a href="#"> Other Link</a></div>
-        </div>
+       <iframe class="discord" src="https://discord.com/widget?id=1157845771228553229&theme=dark" width="242" height="278" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
       </main>
       <footer2>
         Footer
@@ -85,6 +74,56 @@
     <p class="footerDisclaimer">evers0ft<span></span></p>
     <p class="footerNote">https://rune-server.org/members/evergreen</p>
   </footer>
+
+  <!-- The Modal -->
+  <div id="modal_window" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>    
+      <!-- Main Body Text -->
+      <section class="h1">
+        <h1>SERVER STATUS : DOWN</h1>
+      </section>
+      <p class="mainContent">Evergreen is aimed to be a lightweight and modern rendition of the 2005 gamepack, the game engine was built
+        using apollo which is a high-performance, modular RuneScape emulator with a collection of utilities for managing
+        data files and plugins.</p>
+      <p>Some text in the Modal.. Some text in the Modal..</p>
+      <img src="img/signup.png" align="right" width="168" alt="signup" />
+      <img src="img/signup.png" align="right" width="168" alt="signup" />
+    </div>
+  </div>
+
 </body>
+
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("modal_window");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("play_button");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
 
 </html>
