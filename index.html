@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Evergreen - A Modern 2005 Rendition</title>
-  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
   <script>var __adobewebfontsappname__ = "dreamweaver"</script>
@@ -28,25 +28,33 @@
         </span>
       </p>
     </div>
-    <div class="profilePhoto">
-      <!-- Main Body Sword Icon -->
-      <img src="img/sword.png" align="right" width="280" height="241" alt="" />
-    </div>
     <!-- Main Body Text -->
     <section class="profileHeader">
-      <h1>A 2005 RENDITION : APOLLO AND DANES MITB</h1>
-      <h3>A KOTLIN AND JAVA COLLECTIVE</h3>
-      <p>Evergreen is aimed to be a lightweight and modern rendition of the 2005 gamepack, the game engine was built
-        using apollo which is a high-performance, modular RuneScape emulator with a collection of utilities for managing
-        data files and plugins.</p>
-      <p>The combination of these two have shown outstanding performance, on my machine while also running the server in
-        standard fixed mode it runs about 11-12ms with resize mode running around 15-17ms but this can vary when you
-        continuously enlarge the game applet, regardless in the majority of its use it stays at 50fps with little to no
-        effort.</p>
+      <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><!-- Slider title here --></div>
+  <img src="img/header/pk_wild.png" style="width:100%">
+  <div class="text"><h1>TEST_TITLE_TEST_TITLE_TEST_TITLE</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><!-- Slider title here --></div>
+  <img src="img/header/wild_pk.png" style="width:100%; ">
+  <div class="text"><h1>TEST_TITLE_TEST_TITLE_TEST_TITLE</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><!-- Slider title here --></div>
+  <img src="img/header/shields.png" style="width:100%">
+  <div class="text"><h1>TEST_TITLE_TEST_TITLE_TEST_TITLE</h1></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
     </section>
-    <br>
-    <br>
-    <!----TESTING NEW LAYOUT -->
+<!----TESTING NEW LAYOUT -->
     <div class="grid">
       <header2>
         <ul>
@@ -63,7 +71,7 @@
         data files and plugins.</p></p>
       </main>
       <main>
-       <iframe class="discord" src="https://discord.com/widget?id=1157845771228553229&theme=dark" width="242" height="278" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+       <iframe class="discord" src="https://discord.com/widget?id=1157845771228553229&theme=dark" width="242" height="268" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
       </main>
       <footer2>
         Footer
@@ -75,7 +83,7 @@
     <p class="footerNote">https://rune-server.org/members/evergreen</p>
   </footer>
 
-  <!-- The Modal -->
+  <!-- Play Page Modal -->
   <div id="modal_window" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
@@ -92,38 +100,11 @@
       <img src="img/signup.png" align="right" width="168" alt="signup" />
     </div>
   </div>
-
+	
+<!-- END BODY -->
 </body>
-
-
-
-<script>
-  // Get the modal
-  var modal = document.getElementById("modal_window");
-
-  // Get the button that opens the modal
-  var btn = document.getElementById("play_button");
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks the button, open the modal 
-  btn.onclick = function () {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function () {
-    modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-</script>
-
-
+<!-- Slider Script -->
+<script src="js/modal_slides.js"></script>
+<!-- Play Page Script -->
+<script src="js/modal_play.js"></script>
 </html>

@@ -1,6 +1,5 @@
 # evers0ft
 Landing Page
-https://ghadow1.github.io/evers0ft/
 
 Evergreen is aimed to be a lightweight and modern rendition of the 2005 gamepack, the game engine was built using apollo which is a high-performance, modular RuneScape emulator with a collection of utilities for managing data files and plugins.
 
