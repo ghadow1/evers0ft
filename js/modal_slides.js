@@ -4,7 +4,7 @@ var slideIndex = 0;
 //..Get the slides
 let slides = document.getElementsByClassName("headerSlides");
 
-//..On start
+//..Startup
 loop();
 
 //..Timed rotation
@@ -16,7 +16,9 @@ function loop() {
   if (slideIndex > slides.length) {
     slideIndex = 1
   }
+
   slides[slideIndex - 1].style.display = "block";
+  //..Pause then do the same action (a loop)
   setTimeout(loop, 38000);
 }
 

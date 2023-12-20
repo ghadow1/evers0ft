@@ -1,6 +1,6 @@
 // JavaScript Document
   // Get the modal
-  var modal = document.getElementById("modal_window");
+  var modal = document.getElementById("play_window");
 
   // Get the button that opens the modal
   var btn = document.getElementById("play_button");
